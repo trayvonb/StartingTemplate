@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect
 from form import MessageForm
 from config import Config
+from Todo import my_function 
 
 app = Flask(
   'app',
@@ -28,3 +29,5 @@ def page_two():
   return render_template('pageTwo.html', my_message=my_message)
 
 app.run(host='0.0.0.0', port=8080)
+
+@app.route('/', methods=['get'])
