@@ -8,10 +8,10 @@ app = Flask(
 )
 app.config.from_object(Config)
 
-my_message = ""
+my_message = []
 def setMessage(my_To_Do_List):
   global my_message
-  my_message="Trayvon"
+  my_message.append(my_To_Do_List)
   print(my_message)
 
 def my_function():
