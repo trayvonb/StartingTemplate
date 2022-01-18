@@ -34,3 +34,8 @@ def page_two():
   return render_template('pageTwo.html', my_message=my_message)
 
 app.run(host='0.0.0.0', port=8080)
+
+mylist=["This is index 0", "This is index 1"," This is index 3"]
+print(mylist[0])
+mylist=['One', 'Two', 'Three']
+print(mylist)
